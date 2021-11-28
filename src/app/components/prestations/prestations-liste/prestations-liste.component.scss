@@ -1,0 +1,9 @@
+@import 'src/app/common/css/common.scss';
+
+.service-card{
+  padding-left: 0;
+  padding-right: 0;
+  &:hover{
+    box-shadow: 5px 5px 15px -5px $cqfd-blue;
+  }
+}

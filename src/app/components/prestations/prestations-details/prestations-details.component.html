@@ -1,0 +1,20 @@
+<div class="prestation">
+  <a class="js-scroll-trigger text-decoration-none" [href]="anchor">
+    <h3 class="h4 my-3 text-uppercase {{cssClass}}">{{title}}</h3>
+    <div class="picture-container">
+      <img src="assets/{{icon}}.jpg" class="w-100" alt="{{icon}} asset image">
+    </div>
+   <!--  <div class="iconize {{icon}}"></div> -->
+    <ul class="my-3">
+      <li *ngFor="let entry of description | liste" class="prestation-detail">
+        <i class="fa fa-angle-right"></i> {{entry}}
+      </li>
+    </ul>
+    <div class="my-3">
+      <span *ngFor="let entry of footer | liste">
+        {{entry}} <br>
+      </span>
+    </div>
+  </a>
+</div>
+

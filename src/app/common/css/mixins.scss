@@ -1,0 +1,7 @@
+@function rem-raw($size) {
+  @return $size / 12;
+}
+
+@function rem($size) {
+  @return #{rem-raw($size)}rem;
+}

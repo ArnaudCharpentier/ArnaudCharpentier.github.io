@@ -1,0 +1,66 @@
+@import 'src/app/common/css/common.scss';
+
+@keyframes shorten {
+  0% {
+    width: initial;
+  }
+  10% {
+    width: 60%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+
+.logo{
+  max-width: rem(150);
+  @include media-breakpoint-up(md) {
+    max-width: rem(200);
+  }
+}
+
+#mainNav{
+  transition: all 0.5s ease-out;
+  &.navbar-shrink {
+    background-color: white;
+    // max-height: rem(50);
+    border-bottom: rem(2) solid $cqfd-blue;
+    box-sizing: content-box;
+    .logo{
+      animation-name: shorten;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: both;
+      animation-timing-function: ease;
+    }
+  }
+
+  #navbarResponsive{
+    &.show{
+      background-color:white;
+    }
+  }
+
+
+  .nav-link{
+    border-radius: rem(5);
+    margin: 0 rem(2);
+    @include media-breakpoint-down(md){
+      padding-left: rem(12);
+    }
+
+    &.active{
+      color: white;
+      font-weight: bold;
+      border:rem(1) solid $cqfd-blue;
+      color: $cqfd-blue;
+      background-color: white;
+    }
+
+    &:hover{
+      color: white;
+      background-color: $cqfd-blue;
+    }
+  }
+}

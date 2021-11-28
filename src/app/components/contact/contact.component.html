@@ -1,0 +1,53 @@
+<section class="page-section py-5" id="contact">
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="mt-0">On reste en contact !</h2>
+        <hr class="divider my-4"/>
+        <div class="text-muted mb-5">
+          <div class="mb-3 font-italic fs20"> Pr&ecirc;t &agrave; d&eacute;marrer notre nouvelle collaboration ?</div>
+          Appelez moi directement au <b><a href="tel:+33783323553" class="primary-darken-20">07.83.32.35.53</a></b> ou contactez moi via
+          le formulaire de contact et je vous répondrai dans les meilleurs délais
+        </div>
+      </div>
+    </div>
+
+    <form (ngSubmit)="onSubmit(FormData.value)" [formGroup]="FormData">
+
+      <input type="hidden" name="_confirmation" value="">
+      <div class="form-group">
+        <label for="fullname">Votre nom et prénom</label>
+        <input class="form-control" formControlName="Fullname" name="Fullname" id="fullname" placeholder="Entrez votre nom et prénom" type="text">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Votre e-mail de contact</label>
+        <input aria-describedby="emailHelp" class="form-control" formControlName="Email" name="Email" id="email" placeholder="Entrer votre email"type="email">
+        <small class="form-text text-muted" id="emailHelp">Nous de transmettrons jamais votre e-mail à un tiers.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="youAre">Vous êtes</label>
+        <select class="form-control" formControlName="youAre" name="youAre" id="youAre" placeholder="Vous êtes">
+          <option value="INDUSTRIE">Une industrie</option>
+          <option value="LABORATOIRE">Un laboratoire</option>
+          <option value="CENTRE_FORMATION">Un centre de formation</option>
+          <option value="OTHER">Autre</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="companyName">Nom de votre société</label>
+        <input class="form-control" formControlName="companyName" name="companyName" id="companyName" placeholder="Entrez le nom de votre société" type="text">
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Description de votre demande:</label>
+        <textarea class="form-control" id="comment" formControlName="Comment" name="Comment" rows="10"></textarea>
+      </div>
+
+      <button [disabled]="!FormData.valid" class="btn btn-primary mb-5" type="submit">Envoyer votre demande</button>
+    </form>
+  </div>
+
+</section>

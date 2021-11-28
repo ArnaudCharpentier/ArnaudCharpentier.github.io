@@ -1,0 +1,80 @@
+@import 'src/app/common/css/common.scss';
+
+.prestation{
+  .iconize{
+    width: rem(60);
+    height: rem(60);
+    display: block;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: rem(16);
+
+    &.advice{
+      background-image: url("/assets/advice.png");
+    }
+    &.diagnostic{
+      background-image: url("/assets/diagnostic.png");
+    }
+    &.graduation_cap{
+      background-image: url("/assets/graduation_cap.png");
+    }
+  }
+
+  a{
+    color:#212529;
+  }
+
+  ul{
+    @include media-breakpoint-down(md) {
+      padding-left: rem(12);
+    }
+    li{
+      list-style: none;
+      line-height: rem(24);
+      &.prestation-detail{
+        text-align: initial;
+      }
+      i{
+        font-size: rem(24);
+        line-height: rem(24);
+        color: $cqfd-grey;
+        margin-right: rem(3);
+        position: relative;
+        top: rem(4);
+      }
+    }
+  }
+  .picture-container{
+    display: block;
+    overflow: hidden;
+
+    img{
+      display: block;
+      width: 100%;
+      top: 50%;
+      max-width: none;
+      max-height: none;
+      z-index: -100;
+      position: unset;
+      transform: none;
+      margin: 0;
+      float: none;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      transition: all 500ms ease;
+    }
+  }
+
+  &:hover{
+    .picture-container{
+      img{
+        transform: scale(1.2);
+        -webkit-filter: none;
+        filter: none;
+      }
+    }
+  }
+}
+

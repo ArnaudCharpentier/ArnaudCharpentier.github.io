@@ -1,0 +1,15 @@
+@import 'src/app/common/css/common.scss';
+
+header.masthead{
+  background-size: cover;
+  background: url(/assets/bg-cqfd-fhd.jpg) no-repeat scroll center;
+
+  height: 100vh;
+  //min-height: rem(300);
+  padding-bottom: 0;
+  padding-top: rem(120);
+
+  @include media-breakpoint-up(md) {
+    padding-top: rem(4.5);
+  }
+}

@@ -1,0 +1,25 @@
+@import 'src/app/common/css/common.scss';
+
+footer{
+  .social-links{
+    .list-inline{
+      li{
+        display: inline-block;
+        padding: 0 rem(8);
+
+        a{
+          color: lighten($cqfd-blue, 30%);
+        }
+        svg{
+          fill: lighten($cqfd-blue, 30%);
+        }
+
+        .fa-linkedin{
+          position: relative;
+          top: rem(2);
+        }
+      }
+    }
+  }
+
+}
