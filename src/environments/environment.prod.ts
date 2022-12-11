@@ -8,7 +8,7 @@ export const environment = {
     prestations_details_1: true,
     prestations_details_2: true,
     prestations_details_3: true,
-    portfolio: false,
+    portfolio: true,
     contact:true,
     footer: true
   }

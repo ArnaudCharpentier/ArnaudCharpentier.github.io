@@ -1,9 +1,18 @@
 @import 'src/app/common/css/common.scss';
 
 .sliders {
+  min-height: rem(300);
+  height: fit-content;
   position: relative;
-  min-height: rem(150);
+  max-height: max-content;
   text-align: center;
+
+  @include media-breakpoint-up(sm) {
+    min-height: rem(250);
+  }
+  @include media-breakpoint-up(md) {
+    min-height: rem(200);
+  }
 }
 
 .slider {

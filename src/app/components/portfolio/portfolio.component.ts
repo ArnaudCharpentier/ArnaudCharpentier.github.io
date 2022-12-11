@@ -19,9 +19,10 @@ export class PortfolioComponent implements OnInit {
   current = 0;
 
   testimonialsList : Testimonials[] = [
-    new Testimonials("Jean-Louis R.", "Un vrai régal d'avoir pu travailler avec CQFD, très pro, je recommande", "Danoune"),
-    new Testimonials("Michel P.", "Une approche très pro et didactique, de très bon conseils, une belle expérience de travailler avec Nadège", "Yopli"),
-    new Testimonials("Catherine F.", "Quel talent, amaizing, what else...", "Maître poule")
+    new Testimonials("Thomas L.", "Disponibilité et adaptabilité à la fois sur les plannings et les secteurs d'activités. Force de propositions lors de la réalisation des audits.", "TLC-S"),
+    new Testimonials("Marcel S.", "Très bonne pro-activité et disponibilité. Des réponses aux problèmes posés. Très pro ! Une réussite de certification à l'audit QUALIOPI. Parfait !", "Augias Holding"),
+    new Testimonials("Camille R.", "Merci pour ton support très pro tout au long de ta mission chez nous.", "Eurofins Colmar"),
+    new Testimonials("Paul T.", "De réelles qualités d'auditrice: méthode, rigueur, pédagogie. Une connaissance très concrète de l'application de la norme 17025 lui donnant la capacité de conseiller et d'accompagner. Ethique irréprochable, et sa très grande persévérance !", "Eurofins Nantes")
   ]
 
   ngOnInit() {
