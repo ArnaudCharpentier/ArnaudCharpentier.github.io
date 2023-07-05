@@ -2,7 +2,8 @@
 @import "variables";
 @import '~bootstrap/scss/bootstrap-grid.scss';
 
-body{
+body,
+.primary{
   color: $primary;
 }
 

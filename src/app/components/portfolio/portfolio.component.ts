@@ -22,6 +22,7 @@ export class PortfolioComponent implements OnInit {
     new Testimonials("Thomas L.", "Disponibilité et adaptabilité à la fois sur les plannings et les secteurs d'activités. Force de propositions lors de la réalisation des audits.", "TLC-S"),
     new Testimonials("Marcel S.", "Très bonne pro-activité et disponibilité. Des réponses aux problèmes posés. Très pro ! Une réussite de certification à l'audit QUALIOPI. Parfait !", "Augias Holding"),
     new Testimonials("Camille R.", "Merci pour ton support très pro tout au long de ta mission chez nous.", "Eurofins Colmar"),
+    new Testimonials("Anne-Pascale G.", "Mme Pioche est très professionnelle et agréable, je recommande ses services sans hésitation.", "Harmonie Mutuelle"),
     new Testimonials("Paul T.", "De réelles qualités d'auditrice: méthode, rigueur, pédagogie. Une connaissance très concrète de l'application de la norme 17025 lui donnant la capacité de conseiller et d'accompagner. Ethique irréprochable, et sa très grande persévérance !", "Eurofins Nantes")
   ]
 
