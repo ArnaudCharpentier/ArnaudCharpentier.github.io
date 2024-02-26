@@ -9,7 +9,7 @@ export class ListePipe implements PipeTransform {
       else
         return [value];
     }
-    return ;
+    return[];
   }
 }
 

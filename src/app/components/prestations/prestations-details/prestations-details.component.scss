@@ -8,8 +8,7 @@
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: auto;
-    margin-bottom: rem(16);
+    margin: auto auto rem(16);
 
     &.advice{
       background-image: url("/assets/img/advice.png");

@@ -1,11 +1,11 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-prestations-details',
   templateUrl: './prestations-details.component.html',
   styleUrls: ['./prestations-details.component.scss']
 })
-export class PrestationsDetailsComponent{
+export class PrestationsDetailsComponent {
 
   @Input() anchor: string;
   @Input() title: string;
@@ -14,6 +14,7 @@ export class PrestationsDetailsComponent{
   @Input() footer: string;
   @Input() cssClass: string;
 
-  constructor() { }
+  constructor() {
+  }
 
 }

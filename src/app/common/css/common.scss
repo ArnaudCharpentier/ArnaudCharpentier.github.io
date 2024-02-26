@@ -1,90 +1,96 @@
-@import "mixins";
-@import "variables";
-@import '~bootstrap/scss/bootstrap-grid.scss';
+@import 'bootstrap/scss/bootstrap';
+@import './mixins';
+@import './variables';
 
 body,
-.primary{
+.primary {
   color: $primary;
 }
 
-.bg-cqfd-primary{
+.bg-cqfd-primary {
   background-color: $cqfd-blue;
 }
 
-.bg-cqfd-secondary{
+.bg-cqfd-secondary {
   background-color: lighten($cqfd-blue, 10%);
 }
 
-.bg-cqfd-third{
+.bg-cqfd-third {
   background-color: lighten($cqfd-blue, 40%);
 }
 
-.bg-primary-lighten-40{
+.bg-primary-lighten-40 {
   background-color: lighten($cqfd-blue, 40%);
 }
 
-.bg-primary-lighten-35{
+.bg-primary-lighten-35 {
   background-color: lighten($cqfd-blue, 35%);
 }
 
-.bg-primary-lighten-30{
+.bg-primary-lighten-30 {
   background-color: lighten($cqfd-blue, 30%);
 }
 
-.bg-primary-lighten-25{
+.bg-primary-lighten-25 {
   background-color: lighten($cqfd-blue, 25%);
 }
 
-.primary-darken-10{
+.primary-darken-10 {
   color: darken($cqfd-blue, 10%);
 }
 
-.primary-darken-20{
+.primary-darken-20 {
   color: darken($cqfd-blue, 20%);
 }
 
-.primary-darken-30{
+.primary-darken-30 {
   color: darken($cqfd-blue, 30%);
 }
 
-.btn-primary{
+.btn-primary {
   background-color: $cqfd-blue;
   border-color: $cqfd-blue;
-  &:hover{
+
+  &:hover {
     background-color: darken($cqfd-blue, 10%);
   }
 }
 
-.highlight{
-  u{
+.highlight {
+  u {
     color: $cqfd-blue;
     font-weight: bold;
   }
 }
 
-.bg-dark{
-  .highlight{
-    u{
+.bg-dark {
+  .highlight {
+    u {
       color: lighten($cqfd-blue, 30%);
     }
   }
 }
 
-.fs18{
+.fs18 {
   font-size: rem(18);
 }
-.fs20{
+
+.fs20 {
   font-size: rem(20);
 }
-.fs22{
-   font-size: rem(22);
+
+.fs22 {
+  font-size: rem(22);
 }
-.fs24{
+
+.fs24 {
   font-size: rem(24);
 }
-.fs30{
+
+.fs30 {
   font-size: rem(30);
 }
-.fs36{
+
+.fs36 {
   font-size: rem(36);
 }
