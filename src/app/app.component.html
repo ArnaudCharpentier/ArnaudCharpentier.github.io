@@ -1,248 +1,250 @@
 <!-- Navigation  -->
 <app-navigation *featureToggle="'navigation'"></app-navigation>
 
-<!-- Header -->
-<app-header *featureToggle="'header'"></app-header>
+<div data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true" tabindex="0">
+  <!-- Header -->
+  <app-header *featureToggle="'header'"></app-header>
 
-<!-- A propos-->
-<app-about *featureToggle="'about'"></app-about>
+  <!-- A propos-->
+  <app-about *featureToggle="'about'"></app-about>
 
-<!-- LISTE DES PRESTATIONS -->
-<app-prestations-liste *featureToggle="'prestations_liste'">
-</app-prestations-liste>
+  <!-- LISTE DES PRESTATIONS -->
+  <app-prestations-liste *featureToggle="'prestations_liste'">
+  </app-prestations-liste>
 
-<!-- DESC CONSULTING -->
-<section class="page-section bg-cqfd-primary text-white py-5" id="consulting" *featureToggle="'prestations_details_1'">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-12 text-center">
+  <!-- DESC CONSULTING -->
+  <section class="page-section bg-cqfd-primary text-white py-5" id="consulting" *featureToggle="'prestations_details_1'">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
 
-        <div class="d-block d-sm-none">
-          <h2 class="mb-4">Consulting qualité</h2>
-          <hr class="divider light my-4"/>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 text-center" data-aos="fade-right">
-            <span class="helper"></span>
-            <img src="assets/img/consulting.jpg" class="img-thumbnail mb-5 va" alt="consulting qualité image">
+          <div class="d-block d-sm-none">
+            <h2 class="mb-4">Consulting qualité</h2>
+            <hr class="divider light my-4"/>
           </div>
 
-          <div class="col-lg-8 text-center align-self-center">
-
-            <div class="d-none d-sm-block">
-              <h2 class="mb-4" data-aos="fade-left">Consulting qualité</h2>
-              <hr class="divider light my-4"/>
+          <div class="row">
+            <div class="col-lg-4 text-center" data-aos="fade-right">
+              <span class="helper"></span>
+              <img src="assets/img/consulting.jpg" class="img-thumbnail mb-5 va" alt="consulting qualité image">
             </div>
 
-            <p class="header">
-              L’aide peut venir de l’extérieur afin de gérer un projet urgent, de bénéficier d’un avis extérieur ou de
-              palier à une surchage de travail ponctuelle.
-            </p>
+            <div class="col-lg-8 text-center align-self-center">
 
-            <h5 class="mt-1 mb-3">Détail / Déroulement :</h5>
+              <div class="d-none d-sm-block">
+                <h2 class="mb-4" data-aos="fade-left">Consulting qualité</h2>
+                <hr class="divider light my-4"/>
+              </div>
 
-            <ul class="text-left">
-              <li>Mise en place d’un système qualité</li>
-              <li>Accompagnement au traitement d’un audit interne ou externe : traitement de donnée, mise en place de
-                nouveaux
-                outils, amélioration du système documentaire ou d’habilitation, …
-              </li>
-              <li>Chantier d’amélioration continue : DMAIC, habilitation, gestion de la documentation, gestion des non
-                conformités,
-                digitalisation du SMQ...
-              </li>
-              <li>Gestion de crise : Aide à la mise en place d’action, assurer le suivi jusqu’à retour à la normale</li>
-              <li>Prise en compte des évolutions normatives : veille normative, comparaison des exigences, création du
-                plan
-                d’action
-              </li>
-            </ul>
+              <p class="header">
+                L’aide peut venir de l’extérieur afin de gérer un projet urgent, de bénéficier d’un avis extérieur ou de
+                palier à une surchage de travail ponctuelle.
+              </p>
+
+              <h5 class="mt-1 mb-3">Détail / Déroulement :</h5>
+
+              <ul class="text-left">
+                <li>Mise en place d’un système qualité</li>
+                <li>Accompagnement au traitement d’un audit interne ou externe : traitement de donnée, mise en place de
+                  nouveaux
+                  outils, amélioration du système documentaire ou d’habilitation, …
+                </li>
+                <li>Chantier d’amélioration continue : DMAIC, habilitation, gestion de la documentation, gestion des non
+                  conformités,
+                  digitalisation du SMQ...
+                </li>
+                <li>Gestion de crise : Aide à la mise en place d’action, assurer le suivi jusqu’à retour à la normale</li>
+                <li>Prise en compte des évolutions normatives : veille normative, comparaison des exigences, création du
+                  plan
+                  d’action
+                </li>
+              </ul>
 
 
-            <hr class="border-white">
-            <div class="py-2">
+              <hr class="border-white">
+              <div class="py-2">
+                <div class="d-inline-flex">
+                  <div class="px-2">
+                    <span class="helper"></span>
+                    <i class="fa fa-info-circle fs30 mr-3"></i>
+                  </div>
+                  <div>
+                    <b>Référentiels :</b> NF EN ISO 17025, NF EN ISO 9001, QUALIPSAD, NF EN ISO 22000, QUALIOPI…
+                  </div>
+                </div>
+              </div>
+              <hr class="border-white">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESC CONSULTING -->
+  <section class="page-section bg-dark text-white py-5" id="formation" *featureToggle="'prestations_details_2'">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+
+          <div class="d-block d-sm-none">
+            <h2 class="mb-4">Formations</h2>
+            <hr class="divider light my-4"/>
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-4 text-center d-block d-sm-none">
+              <span class="helper"></span>
+              <img src="assets/img/formation.jpg" class="img-thumbnail mb-5 va" alt="formation image">
+            </div>
+
+            <div class="col-lg-8 text-center align-self-center">
+
+              <div class="d-none d-sm-block">
+                <h2 class="mb-4">Formations</h2>
+                <hr class="divider light my-4"/>
+              </div>
+
+              <p class="header">
+                Permettre à ses collaborateurs une formation continue afin de développer de nouvelles compétences ou de
+                maintenir leurs connaissances.
+              </p>
+
+              <h5 class="mt-1 mb-3">Détail / Déroulement :</h5>
+
+              <ul class="text-left">
+                <li>Mettre en place une démarche SMQ (NF EN ISO 17025, NF EN ISO 9001, QUALIPSAD, NF EN ISO 22000, QUALIOPI) </li>
+                <li>Comprendre les exigences nomatives (NF EN ISO 17025, NF EN ISO 9001, QUALIPSAD, NF EN ISO 22000, QUALIOPI)</li>
+                <li>Mettre en place une évaluation des risques / HACCP</li>
+                <li>BPL</li>
+                <li>Devenir auditeur interne</li>
+                <li>Métrologie: internalisation des contrôles métrologiques</li>
+              </ul>
+
+              <h5>Formations personnalisées :</h5>
+              <ul class="text-left">
+                <li>Garantir la fiabilité des résultats analytiques de son laboratoire</li>
+                <li><b>Les contrôles qualité :</b> pour quoi faire ?</li>
+                <li><b>Les indicateurs qualité :</b> mettre en place et communiquer</li>
+                <li>La traçabilité analytique</li>
+              </ul>
+              <a href="/assets/pdf/2024-Catalogue%20de%20formation.pdf" class="primary-darken-10 font-weight-bolder" target="_blank">
+                Catalogue de formation disponible ici
+              </a>
+
+              <hr class="border-white">
+              <div class="py-2">
+                <div class="row d-inline-flex">
+                  <div class="col-xs-12 col-md-6 col-lg-5">
+                    <a href="/assets/pdf/2201402.1%20-%20Certificat%20de%20Conformité.pdf" target="_blank">
+                      <img src="/assets/img/qualiopi.png" alt="Logo Qualiopi">
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-7 px-2 align-self-center">
+                    <br class="d-sm-block d-md-none">
+                    <span class="va">
+                      Financement possible aupr&egrave;s des OPCO et/ou FAF.<br/>
+                      Contactez-nous pour étudier ensemble les leviers de financements de la formation à votre disposition !
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <hr class="border-white">
+            </div>
+
+            <div class="col-lg-4 text-center d-none d-sm-block" data-aos="fade-left">
+              <span class="helper"></span>
+              <img src="assets/img/formation.jpg" class="img-thumbnail mb-5 va" alt="formation image">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- DESC CONSULTING -->
+  <section class="page-section bg-cqfd-secondary text-white py-5" id="diagnostic"
+           *featureToggle="'prestations_details_3'">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+
+          <div class="d-block d-sm-none">
+            <h2 class="mb-4">Audit & Diagnostic</h2>
+            <hr class="divider light my-4"/>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 text-center" data-aos="fade-right">
+              <span class="helper"></span>
+              <img src="assets/img/audit.jpg" class="img-thumbnail mb-5 va" alt="audit image">
+            </div>
+
+            <div class="col-lg-8 text-center align-self-center">
+
+              <div class="d-none d-sm-block">
+                <h2 class="mb-4" data-aos="fade-left">Audit & Diagnostic</h2>
+                <hr class="divider light my-4"/>
+              </div>
+
+              <p class="header">
+                Le meilleur outil : <b>l’audit !</b>
+                Permet de se préparer à une demande de reconnaissance mais également de mesurer l’efficacité d’un système
+                qualité déjà existant.
+              </p>
+
+              <h5 class="mt-1 mb-3">Détail / Déroulement :</h5>
+
+              <ul class="text-left">
+
+                <li><b>Audit de diagnostic :</b> il s’agit d’un état des lieux avant demande de reconnaissance.</li>
+                <li><b>Audit de préparation :</b> permet de vérifier la bonne prise en compte des exigences normatives
+                  avant un audit
+                  de référencement.
+                </li>
+                <li><b>Audit interne: </b> Audit planifié répondant aux exigences normatives</li>
+                <li><b>Audit fournisseur: </b>la sous traitance des audits fournisseurs permet l’intervention d’un œil
+                  extérieur tout en vous libérant du temps
+                </li>
+                <li>
+                  <b>Audit méthode, process :</b> audit personnalisé à vos besoins. Recherche de cause d’une situation de
+                  non
+                  conformité ou de crise, recherche d’innovation...
+                </li>
+
+              </ul>
+
+              <hr class="border-white">
+
               <div class="d-inline-flex">
                 <div class="px-2">
                   <span class="helper"></span>
                   <i class="fa fa-info-circle fs30 mr-3"></i>
                 </div>
                 <div>
-                  <b>Référentiels :</b> NF EN ISO 17025, NF EN ISO 9001, QUALIPSAD, NF EN ISO 22000, QUALIOPI…
+                  <b>Référentiels :</b> NF EN ISO 17025, QUALIOPI, NF EN ISO 9001, NF EN ISO 22000, méthodes analytiques
+                  chimiques et microbiologiques, QUALIPSAD…
                 </div>
               </div>
+              <hr class="border-white">
+
             </div>
-            <hr class="border-white">
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- DESC CONSULTING -->
-<section class="page-section bg-dark text-white py-5" id="formation" *featureToggle="'prestations_details_2'">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-12 text-center">
+  <!-- Portfolio -->
+  <app-portfolio *featureToggle="'portfolio'"></app-portfolio>
 
-        <div class="d-block d-sm-none">
-          <h2 class="mb-4">Formations</h2>
-          <hr class="divider light my-4"/>
-        </div>
+  <!-- Contact-->
+  <app-contact *featureToggle="'contact'"></app-contact>
 
-        <div class="row">
+  <router-outlet></router-outlet>
 
-          <div class="col-lg-4 text-center d-block d-sm-none">
-            <span class="helper"></span>
-            <img src="assets/img/formation.jpg" class="img-thumbnail mb-5 va" alt="formation image">
-          </div>
-
-          <div class="col-lg-8 text-center align-self-center">
-
-            <div class="d-none d-sm-block">
-              <h2 class="mb-4">Formations</h2>
-              <hr class="divider light my-4"/>
-            </div>
-
-            <p class="header">
-              Permettre à ses collaborateurs une formation continue afin de développer de nouvelles compétences ou de
-              maintenir leurs connaissances.
-            </p>
-
-            <h5 class="mt-1 mb-3">Détail / Déroulement :</h5>
-
-            <ul class="text-left">
-              <li>Mettre en place une démarche SMQ (NF EN ISO 17025, NF EN ISO 9001, QUALIPSAD, NF EN ISO 22000, QUALIOPI) </li>
-              <li>Comprendre les exigences nomatives (NF EN ISO 17025, NF EN ISO 9001, QUALIPSAD, NF EN ISO 22000, QUALIOPI)</li>
-              <li>Mettre en place une évaluation des risques / HACCP</li>
-              <li>BPL</li>
-              <li>Devenir auditeur interne</li>
-              <li>Métrologie: internalisation des contrôles métrologiques</li>
-            </ul>
-
-            <h5>Formations personnalisées :</h5>
-            <ul class="text-left">
-              <li>Garantir la fiabilité des résultats analytiques de son laboratoire</li>
-              <li><b>Les contrôles qualité :</b> pour quoi faire ?</li>
-              <li><b>Les indicateurs qualité :</b> mettre en place et communiquer</li>
-              <li>La traçabilité analytique</li>
-            </ul>
-            <a href="/assets/pdf/2024-Catalogue%20de%20formation.pdf" class="primary-darken-10 font-weight-bolder" target="_blank">
-              Catalogue de formation disponible ici
-            </a>
-
-            <hr class="border-white">
-            <div class="py-2">
-              <div class="row d-inline-flex">
-                <div class="col-xs-12 col-md-6 col-lg-5">
-                  <a href="/assets/pdf/2201402.1%20-%20Certificat%20de%20Conformité.pdf" target="_blank">
-                    <img src="/assets/img/qualiopi.png" alt="Logo Qualiopi">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-7 px-2 align-self-center">
-                  <br class="d-sm-block d-md-none">
-                  <span class="va">
-                    Financement possible aupr&egrave;s des OPCO et/ou FAF.<br/>
-                    Contactez-nous pour étudier ensemble les leviers de financements de la formation à votre disposition !
-                  </span>
-                </div>
-              </div>
-            </div>
-            <hr class="border-white">
-          </div>
-
-          <div class="col-lg-4 text-center d-none d-sm-block" data-aos="fade-left">
-            <span class="helper"></span>
-            <img src="assets/img/formation.jpg" class="img-thumbnail mb-5 va" alt="formation image">
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<!-- DESC CONSULTING -->
-<section class="page-section bg-cqfd-secondary text-white py-5" id="diagnostic"
-         *featureToggle="'prestations_details_3'">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-12 text-center">
-
-        <div class="d-block d-sm-none">
-          <h2 class="mb-4">Audit & Diagnostic</h2>
-          <hr class="divider light my-4"/>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 text-center" data-aos="fade-right">
-            <span class="helper"></span>
-            <img src="assets/img/audit.jpg" class="img-thumbnail mb-5 va" alt="audit image">
-          </div>
-
-          <div class="col-lg-8 text-center align-self-center">
-
-            <div class="d-none d-sm-block">
-              <h2 class="mb-4" data-aos="fade-left">Audit & Diagnostic</h2>
-              <hr class="divider light my-4"/>
-            </div>
-
-            <p class="header">
-              Le meilleur outil : <b>l’audit !</b>
-              Permet de se préparer à une demande de reconnaissance mais également de mesurer l’efficacité d’un système
-              qualité déjà existant.
-            </p>
-
-            <h5 class="mt-1 mb-3">Détail / Déroulement :</h5>
-
-            <ul class="text-left">
-
-              <li><b>Audit de diagnostic :</b> il s’agit d’un état des lieux avant demande de reconnaissance.</li>
-              <li><b>Audit de préparation :</b> permet de vérifier la bonne prise en compte des exigences normatives
-                avant un audit
-                de référencement.
-              </li>
-              <li><b>Audit interne: </b> Audit planifié répondant aux exigences normatives</li>
-              <li><b>Audit fournisseur: </b>la sous traitance des audits fournisseurs permet l’intervention d’un œil
-                extérieur tout en vous libérant du temps
-              </li>
-              <li>
-                <b>Audit méthode, process :</b> audit personnalisé à vos besoins. Recherche de cause d’une situation de
-                non
-                conformité ou de crise, recherche d’innovation...
-              </li>
-
-            </ul>
-
-            <hr class="border-white">
-
-            <div class="d-inline-flex">
-              <div class="px-2">
-                <span class="helper"></span>
-                <i class="fa fa-info-circle fs30 mr-3"></i>
-              </div>
-              <div>
-                <b>Référentiels :</b> NF EN ISO 17025, QUALIOPI, NF EN ISO 9001, NF EN ISO 22000, méthodes analytiques
-                chimiques et microbiologiques, QUALIPSAD…
-              </div>
-            </div>
-            <hr class="border-white">
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Portfolio -->
-<app-portfolio *featureToggle="'portfolio'"></app-portfolio>
-
-<!-- Contact-->
-<app-contact *featureToggle="'contact'"></app-contact>
-
-<router-outlet></router-outlet>
-
-<app-footer *featureToggle="'footer'"></app-footer>
+  <app-footer *featureToggle="'footer'"></app-footer>
+</div>

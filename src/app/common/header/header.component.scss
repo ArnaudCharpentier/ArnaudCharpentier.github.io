@@ -9,6 +9,7 @@ header.masthead{
   padding-bottom: 0;
   padding-top: rem(120);
 
+  color: $cqfd-black;
   @include media-breakpoint-up(md) {
     padding-top: rem(4.5);
   }
