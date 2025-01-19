@@ -15,35 +15,29 @@ import { ContactComponent } from './components/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TemoignageComponent } from './components/temoignage/temoignage.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import {ContactService} from "./common/services/contact.service";
 import { FeatureToggleDirective } from './common/directives/feature-toogle/feature-toggle.directive';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    NavigationComponent,
-    PrestationsListeComponent,
-    PrestationsDetailsComponent,
-    FooterComponent,
-    PortfolioComponent,
-    AboutComponent,
-    ContactComponent,
-    TemoignageComponent,
-    FeatureToggleDirective
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SharedModule,
-    BrowserAnimationsModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
-  providers: [
-    ContactService
-  ],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HeaderComponent,
+        NavigationComponent,
+        PrestationsListeComponent,
+        PrestationsDetailsComponent,
+        FooterComponent,
+        PortfolioComponent,
+        AboutComponent,
+        ContactComponent,
+        TemoignageComponent,
+        FeatureToggleDirective
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        SharedModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule], providers: [
+        ContactService,
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 export class AppModule { }
