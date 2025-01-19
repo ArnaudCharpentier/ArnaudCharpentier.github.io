@@ -4,15 +4,16 @@ import {Testimonials} from "../../common/model/testimonials";
 
 
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss'],
-  animations:[
-    trigger('fade', [
-      transition('void => *', [style({ opacity: 0 }), animate('300ms', style({ opacity: 1 }))]),
-      transition('* => void', [style({ opacity: 1 }), animate('300ms', style({ opacity: 0 }))]),
-    ])
-  ]
+    selector: 'app-portfolio',
+    templateUrl: './portfolio.component.html',
+    styleUrls: ['./portfolio.component.scss'],
+    animations: [
+        trigger('fade', [
+            transition('void => *', [style({ opacity: 0 }), animate('300ms', style({ opacity: 1 }))]),
+            transition('* => void', [style({ opacity: 1 }), animate('300ms', style({ opacity: 0 }))]),
+        ])
+    ],
+    standalone: false
 })
 export class PortfolioComponent implements OnInit {
 

@@ -2,7 +2,8 @@ import {Directive, Input, OnInit, TemplateRef, ViewContainerRef} from '@angular/
 import { environment } from './../../../../environments/environment';
 
 @Directive({
-  selector: '[featureToggle]'
+    selector: '[featureToggle]',
+    standalone: false
 })
 export class FeatureToggleDirective implements OnInit {
   @Input() featureToggle: string;

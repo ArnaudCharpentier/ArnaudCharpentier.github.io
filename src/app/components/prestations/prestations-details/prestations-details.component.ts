@@ -1,9 +1,10 @@
 import {Component, Input} from '@angular/core';
 
 @Component({
-  selector: 'app-prestations-details',
-  templateUrl: './prestations-details.component.html',
-  styleUrls: ['./prestations-details.component.scss']
+    selector: 'app-prestations-details',
+    templateUrl: './prestations-details.component.html',
+    styleUrls: ['./prestations-details.component.scss'],
+    standalone: false
 })
 export class PrestationsDetailsComponent {
 

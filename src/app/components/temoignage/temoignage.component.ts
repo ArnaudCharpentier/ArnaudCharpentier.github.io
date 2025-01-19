@@ -2,9 +2,10 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Testimonials} from "../../common/model/testimonials";
 
 @Component({
-  selector: 'app-temoignage',
-  templateUrl: './temoignage.component.html',
-  styleUrls: ['./temoignage.component.scss']
+    selector: 'app-temoignage',
+    templateUrl: './temoignage.component.html',
+    styleUrls: ['./temoignage.component.scss'],
+    standalone: false
 })
 export class TemoignageComponent implements OnInit {
 

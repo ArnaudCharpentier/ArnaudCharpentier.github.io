@@ -1,6 +1,9 @@
 import {NgModule, Pipe, PipeTransform} from '@angular/core';
 
-@Pipe({name: 'liste'})
+@Pipe({
+    name: 'liste',
+    standalone: false
+})
 export class ListePipe implements PipeTransform {
   transform(value: string): string[] {
     if(value !== undefined){
