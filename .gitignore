@@ -46,6 +46,7 @@ testem.log
 Thumbs.db
 
 GHPage-NOCOMMIT.txt
+deploy.sh
 
 # Angular
 /.angular
